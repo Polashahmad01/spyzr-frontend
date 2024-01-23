@@ -26,8 +26,9 @@ export default function ThemeSwitcher() {
   return (
     <div>
       <p>The Current theme is: {theme}</p>
-      <button onClick={lighModeHandler}>Light Mode</button>
-      <button onClick={darkModeHandler}>Dark Mode</button>
+      <button onClick={lighModeHandler}>Light</button>
+      <br />
+      <button onClick={darkModeHandler}>Dark</button>
     </div>
   )
 }

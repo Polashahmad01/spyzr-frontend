@@ -18,10 +18,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <ThemeProvider>
-          <ThemeSwitcher />
-          <AppNavbar />
-           {children}
-          <AppFooter />
+          <main className="flex flex-col justify-between h-screen">
+            <AppNavbar />
+            <section>
+              <ThemeSwitcher />
+              {children} 
+            </section>
+            <AppFooter />
+          </main>
         </ThemeProvider>
       </body>
     </html>
