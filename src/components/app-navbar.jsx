@@ -11,7 +11,6 @@ export default function AppNavbar() {
               <h1 className="text-3xl font-bold">SpyZr</h1>
             </Link>
           </div>
-
           <div>
             <ul className="flex flex-wrap items-center gap-8 font-light text-sm">
               <li>
@@ -25,7 +24,6 @@ export default function AppNavbar() {
               </li>
             </ul>
           </div>
-
           <div>
             <ul className="flex flex-wrap items-center gap-4 font-light text-sm">
               <li>
