@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <main className="flex flex-col justify-between h-screen">
             <AppNavbar />
-            <section>
+            <section className="container mx-auto px-4">
               <ThemeSwitcher />
               {children} 
             </section>
