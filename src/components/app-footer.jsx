@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AppFooter() {
   return (
-    <footer className="dark:bg-[#1E1E1E] rounded-t-2xl">
+    <footer className="rounded-t-2xl border-t bg-[#F5F8FA] dark:border-t-0 dark:bg-[#1E1E1E]">
       <div className="px-4 py-4 sm:px-6 sm:py-6 sm:container sm:mx-auto">
         <div className="pb-4 flex flex-wrap flex-col gap-4 sm:pb-6 sm:flex-row sm:justify-between sm:items-end">
           <div className="sm:basis-4/12">
@@ -65,7 +65,7 @@ export default function AppFooter() {
             </ul>
           </div>
         </div>
-        <p className="border-t border-teal-900 text-xs font-light text-center pt-4 sm:pt-6 sm:text-left">
+        <p className="border-t text-xs font-light text-center pt-4 dark:border-teal-900 sm:pt-6 sm:text-left">
           &copy; {new Date().getFullYear()} SpyZr. All rights reserved
         </p>
       </div>
