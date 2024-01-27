@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function AppFooter() {
   return (
@@ -65,9 +66,10 @@ export default function AppFooter() {
             </ul>
           </div>
         </div>
-        <p className="border-t text-xs font-light text-center pt-4 dark:border-teal-900 sm:pt-6 sm:text-left">
-          &copy; {new Date().getFullYear()} SpyZr. All rights reserved
-        </p>
+        <div className="flex flex-wrap justify-between items-center border-t dark:border-teal-900 pt-4 sm:pt-6">
+          <p className="text-xs font-light text-center sm:text-left">&copy; {new Date().getFullYear()} SpyZr. All rights reserved</p>
+          <ThemeSwitcher />
+        </div>
       </div>
     </footer>
   )
