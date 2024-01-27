@@ -5,10 +5,10 @@ import MobileNavbar from "./mobile-navbar";
 export default function AppNavbar() {
   return (
     <>
-      <div className="block bg-[#F5F8FA] border-b dark:bg-black/40 dark:border-b-0 sm:hidden">
-        <MobileNavbar />
-      </div>
       <nav className="bg-[#F5F8FA] border-b dark:bg-black/40 dark:border-b-0">
+        <div className="sm:hidden">
+          <MobileNavbar />
+        </div>
         <div className="hidden sm:block">
           <div className="flex flex-wrap justify-between items-center container mx-auto px-4 p-8">
             <div>
