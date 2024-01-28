@@ -1,5 +1,5 @@
 import Chip from "@/components/chip";
-import PricingCard from "@/ui/pricing/pricing-card";
+import PricingContainer from "@/ui/pricing/pricing-container";
 
 export default function Pricing() {
   return (
@@ -9,7 +9,9 @@ export default function Pricing() {
       </div>
       <h1 className="font-bold mb-4 text-3xl sm:text-5xl">Simple <span className="dark:text-indigo-600/90">Pricing</span></h1>
       <p className="font-light mb-6 text-sm text-center sm:text-base">Simple and affordable pricing. Choose the plan that fits your budget & needs</p>
-      <PricingCard />
+      <div>
+        <PricingContainer />
+      </div>
     </div>
   )
 }
