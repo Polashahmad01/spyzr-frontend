@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <main className="flex flex-col justify-between h-screen">
             <AppNavbar />
-            <section className="container mx-auto px-4">
+            <section className="container mx-auto px-4 ">
               {children} 
             </section>
             <AppFooter />
