@@ -19,7 +19,7 @@ const initialSubscriptionPlans = [
     price: 10,
     title: "Package Includes",
     btnTitle: "Subscribe Now",
-    pricingDescription: "** Billed Yearly.",
+    pricingDescription: "*Billed Yearly.",
     tagLine: "Good choice for short term use case",
     features: ["Test feature 1", "Test feature 2", "Test feature 3", "Test feature 4", "Test feature 5", "Test feature 6", "Test feature 7"],
   },
@@ -29,7 +29,7 @@ const initialSubscriptionPlans = [
     price: 7,
     title: "Package Includes",
     btnTitle: "Subscribe Now",
-    pricingDescription: "** Billed Yearly.",
+    pricingDescription: "*Billed Yearly.",
     tagLine: "Best choice a significant discount",
     features: ["Test feature 1", "Test feature 2", "Test feature 3", "Test feature 4", "Test feature 5"],
   }
@@ -39,13 +39,15 @@ export default function PricingContainer() {
   const [subscriptionPlans, setSubscriptionPlans] = useState(initialSubscriptionPlans)
 
   return (
-    <div className="flex flex-wrap gap-8">
-      {subscriptionPlans.map(subscriptionPlan => (
-        <PricingCard
-          key={subscriptionPlan.id}
-          subscription={subscriptionPlan}
-        />
-      ))}
+    <div>
+      <div className="flex flex-wrap gap-8">
+        {subscriptionPlans.map(subscriptionPlan => (
+          <PricingCard
+            key={subscriptionPlan.id}
+            subscription={subscriptionPlan}
+          />
+        ))}
+      </div>
     </div>
   )
 }
