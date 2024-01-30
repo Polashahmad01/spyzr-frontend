@@ -32,10 +32,10 @@ export default function AppNavbar() {
             <div>
               <ul className="flex flex-wrap items-center gap-4 font-light text-sm">
                 <li>
-                  <Button style="text-sm bg-slate-400/30 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 hover:opacity-70">Get Chrome Extension</Button>
+                  <Button style="text-sm bg-slate-400/30 px-6 py-2 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 hover:opacity-70">Get Chrome Extension</Button>
                 </li>
                 <li>
-                  <Button style="text-sm bg-slate-400/30 dark:bg-indigo-600/90 dark:text-white dark:hover:bg-indigo-700 hover:opacity-70">Sign In</Button>
+                  <Button style="text-sm bg-slate-400/30 px-6 py-2 dark:bg-indigo-600/90 dark:text-white dark:hover:bg-indigo-700 hover:opacity-70">Sign In</Button>
                 </li>
               </ul>
             </div>
