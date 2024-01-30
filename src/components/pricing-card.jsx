@@ -4,7 +4,7 @@ import PricingFeature from "@/ui/pricing/pricing-feature";
 
 export default function PricingCard({ subscription }) {
   const { name, tagLine, price, pricingDescription, title, btnTitle, features, id } = subscription;
-  console.log("id", id);
+
   return (
     <div className={`dark:bg-[#1E1E1E] bg-[#F5F8FA] px-6 py-6 rounded-lg w-80 ${id === "plus" ? "border border-slate-600" : ""}`}>
       <h4 className="text-xl font-semibold mb-1">{name}</h4>
@@ -17,7 +17,7 @@ export default function PricingCard({ subscription }) {
       <div className="mb-5">
         <PricingFeature feature={features} />
       </div>
-      <Button style="dark:bg-indigo-600/90 w-full py-[6px] font-medium hover:opacity-60">{btnTitle}</Button>  
+      <Button style="bg-slate-400/30 dark:bg-indigo-600/90 w-full py-[6px] font-medium hover:opacity-60">{btnTitle}</Button>  
     </div>
   )
 }

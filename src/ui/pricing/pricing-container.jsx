@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import PricingCard from "@/components/pricing-card";
+import Button from "@/components/Button";
 
 const initialSubscriptionPlans = [
   {
@@ -40,6 +41,14 @@ export default function PricingContainer() {
 
   return (
     <div>
+      <div className="flex flex-col justify-center items-center mb-6">
+        <div className="dark:bg-[#1E1E1E] bg-[#F5F8FA] font-medium px-4 py-2 rounded-full flex flex-wrap gap-2">
+          <Button style="dark:bg-indigo-600/90 py-1 px-4 rounded-full">Annually</Button>
+          <Button style="dark:bg-indigo-600/90 py-1 px-4 rounded-full">Monthly</Button>
+        </div>
+        {/* <p className="">More expensive but cancel anytime.</p> */}
+        {/* <p>Save 0% compared to monthly.</p> */}
+      </div>
       <div className="flex flex-wrap gap-8">
         {subscriptionPlans.map(subscriptionPlan => (
           <PricingCard

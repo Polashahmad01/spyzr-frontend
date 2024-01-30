@@ -3,7 +3,7 @@ import PricingContainer from "@/ui/pricing/pricing-container";
 
 export default function Pricing() {
   return (
-    <div className="my-10">
+    <div className="my-20">
       <div className="flex flex-col flex-wrap justify-center items-center my-4 sm:my-0">
         <div className="mb-4">
           <Chip>Pricing</Chip>
