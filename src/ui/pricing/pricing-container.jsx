@@ -39,7 +39,7 @@ export default function PricingContainer() {
   const [subscriptionPlans, setSubscriptionPlans] = useState(initialSubscriptionPlans)
 
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-8">
       {subscriptionPlans.map(subscriptionPlan => (
         <PricingCard
           key={subscriptionPlan.id}
