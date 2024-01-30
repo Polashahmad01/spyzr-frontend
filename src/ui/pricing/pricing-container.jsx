@@ -4,8 +4,8 @@ import PricingCard from "@/components/pricing-card";
 
 const initialSubscriptionPlans = [
   {
-    id: "free",
-    name: "Free",
+    id: "lite",
+    name: "Lite",
     price: 0,
     title: "Package Includes",
     btnTitle: "Try For Free",
@@ -14,8 +14,8 @@ const initialSubscriptionPlans = [
     features: ["Test feature 1", "Test feature 2", "Test feature 3", "Test feature 4", "Test feature 5"],
   },
   {
-    id: "standard",
-    name: "Standard",
+    id: "plus",
+    name: "Plus",
     price: 10,
     title: "Package Includes",
     btnTitle: "Subscribe Now",
@@ -24,8 +24,8 @@ const initialSubscriptionPlans = [
     features: ["Test feature 1", "Test feature 2", "Test feature 3", "Test feature 4", "Test feature 5", "Test feature 6", "Test feature 7"],
   },
   {
-    id: "annual",
-    name: "Annual",
+    id: "ultra",
+    name: "Ultra",
     price: 7,
     title: "Package Includes",
     btnTitle: "Subscribe Now",

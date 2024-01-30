@@ -1,10 +1,10 @@
 
 export default function PricingFeature({ feature }) {
   return (
-    <div>
+    <ul>
       {feature.map(item => (
-        <li key={item}>{item}</li>
+        <li className="list-none" key={item}>{item}</li>
       ))}
-    </div>
+    </ul>
   )
 }
